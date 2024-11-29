@@ -6,25 +6,55 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="style.css" />
+
     <title>AI Portuguese Poem Generator</title>
   </head>
   <body>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/Anjinhos-7" target="_blank"
-        >Ana Catarin Teixeira</a
-      >
-      and is
-      <a href="https://github.com/Anjinhos-7/AI-Poem-Generator" target="_blank">
-        open-sourced on GitHub</a
-      >
-      and is
-      <a
-        href="https://ai-generated-portuguese-poems.netlify.app/"
-        target="_blank"
-        >hosted on Netlify</a
-      >.
-    </footer>
+    <div class="container">
+      <header>
+        <h1>AI Portuguese Poem Generator</h1>
+        <h3>Type what topic you'd like your poem to be ✍️</h3>
+      </header>
+
+      <main>
+        <div class="form-container">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="Enter a topic"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Flower, Lisbon or love</div>
+        </div>
+        <div class="poem hidden" id="poem"></div>
+      </main>
+
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/Anjinhos-7" target="_blank"
+          >Ana Catarin Teixeira</a
+        >
+        and is
+        <a
+          href="https://github.com/Anjinhos-7/AI-Poem-Generator"
+          target="_blank"
+        >
+          open-sourced on GitHub</a
+        >
+        and is
+        <a
+          href="https://ai-generated-portuguese-poems.netlify.app/"
+          target="_blank"
+          >hosted on Netlify</a
+        >.
+      </footer>
+    </div>
 
     <script src="index.js"></script>
   </body>
